@@ -1,0 +1,77 @@
+{
+    "name": "fvi",
+    "data_loader": {
+        "type": "MaskedFrameDataLoader",
+        "args":{
+            "root_videos_dir": "../../../../data/DAVIS/Train/JPEGImages/",
+            "root_masks_dir": "../../../../data/DAVIS/Train/random_masks/",
+            "root_flows_dir": "",
+            "root_flowmasks_dir": "",
+            "root_outputs_dir": "",
+            "dataset_args": {
+                "type": "video",
+                "w": 432,
+                "h": 240,
+                "sample_length": 7,
+                "random_sample": true,
+                "random_sample_mask": true,
+                "mask_type": "random",
+                "do_augment": true
+            },
+            "batch_size": 8,
+            "shuffle": true,
+            "validation_split": 0.0,
+            "num_workers": 4
+        }
+    },
+    "test_data_loader": [
+        {
+            "type": "MaskedFrameDataLoader",
+            "args":{
+                "name": "davis_object",
+                "root_videos_dir": "../../../../data/DAVIS/Test/JPEGImages/",
+                "root_masks_dir": "../../../../data/DAVIS/Test/random_masks/object",
+                "root_flows_dir": "",
+                "root_flowmasks_dir": "",
+                "root_outputs_dir": "../../../../data/VOS_resized2",
+                "dataset_args": {
+                    "type": "video",
+                    "w": 432,
+                    "h": 240,
+                    "sample_length": 120,
+                    "random_sample": false,
+                    "random_sample_mask": false,
+                    "mask_type": "from_start"
+                },
+                "batch_size": 1,
+                "shuffle": false,
+                "validation_split": 0.0,
+                "num_workers": 1
+            }
+        },
+        {
+            "type": "MaskedFrameDataLoader",
+            "args":{
+                "name": "davis_curve",
+                "root_videos_dir": "../../../../data/DAVIS/Test/JPEGImages/",
+                "root_masks_dir": "../../../../data/DAVIS/Test/random_masks/curve",
+                "root_flows_dir": "",
+                "root_flowmasks_dir": "",
+                "root_outputs_dir": "../../../../data/VOS_resized2",
+                "dataset_args": {
+                    "type": "video",
+                    "w": 432,
+                    "h": 240,
+                    "sample_length": 120,
+                    "random_sample": false,
+                    "random_sample_mask": false,
+                    "mask_type": "from_start"
+                },
+                "batch_size": 1,
+                "shuffle": false,
+                "validation_split": 0.0,
+                "num_workers": 1
+            }
+        }
+    ]
+}
