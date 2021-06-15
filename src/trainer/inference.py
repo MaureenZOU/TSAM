@@ -10,7 +10,7 @@ from base import BaseInference
 from evaluate import get_fid_score, get_i3d_activations, init_i3d_model, evaluate_video_error
 from utils.readers import save_frames_to_dir
 from model.loss import AdversarialLoss
-from xy_scripts import demo_image
+# from xy_scripts import demo_image
 
 
 class Inference(BaseInference):
@@ -219,8 +219,8 @@ class Inference(BaseInference):
                     total_p_dist += p_dist
                     total_length += length
 
-        if 'test_object' in output_root_dir:
-            demo_image(output_root_dir)
+        # if 'test_object' in output_root_dir:
+        #     demo_image(output_root_dir)
 
         if self.evaluate_score:
             output_i3d_activations = np.concatenate(output_i3d_activations, axis=0)

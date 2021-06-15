@@ -31,14 +31,14 @@
                 "name": "davis_removal",
                 "root_videos_dir": "../../../../data/DAVIS/Test/JPEGImages",
                 "root_masks_dir": "../../../../data/DAVIS/Test/Annotations",
-                "root_flows_dir": "../../../../data/DAVIS/Test/flownet_removal_complete",
-                "root_flowmasks_dir": "../../../../data/DAVIS/Test/flownet_removal_complete_mask",
+                "root_flows_dir": "../../../../data/DAVIS/Test/flownet_complete/flow_removal_complete",
+                "root_flowmasks_dir": "../../../../data/DAVIS/Test/flownet_complete/flow_removal_complete_mask",
                 "root_outputs_dir": "../../../../data/VOS_resized2",
                 "dataset_args": {
                     "type": "video_flow",
                     "w": 432,
                     "h": 240,
-                    "sample_length": 120,
+                    "sample_length": 5,
                     "random_sample": false,
                     "random_sample_mask": false,
                     "mask_type": "davis"
