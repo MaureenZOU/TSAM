@@ -4,6 +4,12 @@ This work is accepted in **CVPR2021** as Poster. It proposed a new video inpaint
 
 Noted: This code is currently a beta version. Not gurantee to be fully correct.
 
+## Update
+[Optical Flow Davis](https://drive.google.com/file/d/1oi7cEGM0vFy5cWAdglvXi_r2g7ewuMPG/view?usp=sharing)
+[Optical Flow FVI](https://drive.google.com/file/d/1DPsxfXcp_JRnfMTK7sOd6o7-w-NEaMiA/view?usp=sharing)
+[Mask Davis](https://drive.google.com/file/d/1wFGea38g0SktmWymk1If5h3ESbxRvA66/view?usp=sharing)
+[Mask FVI](https://drive.google.com/file/d/1FHFwuYjY8ovqSvmnt_cKtHW8VO_TgR_D/view?usp=sharing)
+[Checkpoint](https://drive.google.com/file/d/17PN5aB34M-TkGP5jwCrcQRo76TNbfMu-/view?usp=sharing)
 
 ## Installation
 ```
